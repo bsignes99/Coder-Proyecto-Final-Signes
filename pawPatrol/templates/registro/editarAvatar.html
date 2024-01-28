@@ -3,7 +3,7 @@
 
 {%block formulario%}
 <form action="" method="POST"> {%csrf_token%}
-    {{formulario.as_p}}
+    {{formu.as_p}}
     <input type="submit", value="Guardar">
 </form>
 {%endblock%}
