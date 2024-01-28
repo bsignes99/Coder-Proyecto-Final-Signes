@@ -29,4 +29,3 @@ class favorito(models.Model):
     habilidad = models.CharField(max_length=70)
     raza = models.CharField(max_length=40)
     descripcion = models.CharField(max_length=300)
-    foto = models.ImageField(upload_to="Heroes", null=True, blank=True)
