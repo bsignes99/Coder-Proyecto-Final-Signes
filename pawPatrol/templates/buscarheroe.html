@@ -1,0 +1,10 @@
+{%extends "padre.html" %}
+{%block titulo%} 
+Ahora que ya los conoces, buscalos por su nombre y averigua mas datos sobre nuestros amigos 
+<h2>Tambien puedes buscar tu cachorro personalizado.</h2>
+
+<form action="/resultados/" method="GET">
+    <input type="text" name="nombre">
+    <input type="submit" value="Buscar">
+</form>
+{%endblock%}

@@ -1,0 +1,27 @@
+{%extends "padre.html" %}
+
+{%block titulo%} Conozcamos los personajes de Bahia Aventura!!! 
+<h2> {{msj}} </h2>
+{%endblock%}
+
+{%block botones%} 
+<a class="btn btn-primary" href="comencemos">Comencemos!!!</a>
+
+{%endblock%}
+
+{%block texto%}
+<style>
+    .posicion-especifica-boton {
+        position: absolute;
+        top: 920px;
+        left:650px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-boton"> 
+<a class="btn btn-primary" href="aboutme">Sobre mi!</a>
+</div>
+</body>
+
+{%endblock%}

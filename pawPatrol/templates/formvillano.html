@@ -1,0 +1,14 @@
+{%extends "padre.html" %}
+{%block titulo%} Personaliza tu Villano {%endblock%}
+
+
+{%block formulario%}
+
+<form action="" method="POST"> {%csrf_token%}
+    
+    {{nuevovillano.as_p}}
+
+    <input type= "submit" , value="Enviar">
+</form>
+
+{%endblock%}

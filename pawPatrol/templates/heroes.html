@@ -1,0 +1,122 @@
+{%extends "padre.html" %}
+{%block titulo%} Ellos nos ayudan a mantener el orden en Bahia Aventura {%endblock%}
+
+{%block parrafo%} 
+<p> <mark>¿Quieres crear tu propio heroe?</mark></p>
+{%endblock%}
+
+{%block botones%} 
+<a class="btn btn-primary" href="formheroe">Personaliza el tuyo!</a>
+
+{%endblock%}
+
+{%block imagenes%} 
+<p><img src="https://www.pngall.com/wp-content/uploads/13/Paw-Patrol-Transparent.png" 
+alt="Chase", width="180" class="imagen-chase"> </p>
+
+
+<p><img src="https://www.pngall.com/wp-content/uploads/14/Paw-Patrol-Skye-PNG-Cutout.png" 
+alt="Skye" width="250" class="imagen-skye" ></p>
+
+<p><img src="https://www.pngall.com/wp-content/uploads/13/Paw-Patrol-PNG-Images-HD.png"
+alt="Marshall", width="250" class="imagen-marshall"></p>
+
+{%endblock%}
+
+
+{%block posicion%} 
+<style>
+    .imagen-chase {
+        position: absolute;
+        top: 1000px;
+        left: 100px;
+    }
+</style>
+
+<style>
+    .imagen-skye {
+        position: absolute;
+        top: 1250px;
+        right: 100px;
+    }
+</style>
+
+<style>
+    .imagen-marshall {
+        position: absolute;
+        top: 1500px;
+        left: 100px;
+    }
+</style>
+
+{%endblock%}
+
+{%block siguiente%}
+<style>
+    /* Estilo CSS para posicionar el botón */
+    .boton-al-final {
+        position: absolute;
+        top: 1850px;
+        left: 675px;
+        background-color: #1900ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<a class="boton-al-final" href="heroessig"> Siguiente </a>
+{%endblock%}
+
+
+
+{%block texto%}
+
+    <style>
+        .posicion-especifica-chase {
+            position: absolute;
+            top: 1150px;
+            left: 300px;
+        }
+    </style>
+
+<body>
+    <div class="posicion-especifica-chase">
+       <p>Chase es un perrito policía, espía, por lo que sus deberes se enfocan en proteger a los ciudadanos,
+         controlar el tránsito y buscar objetos perdidos. </p>
+    </div>
+</body>
+
+<style>
+    .posicion-especifica-skye {
+        position: absolute;
+        top: 1400px;
+        left: 50px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-skye">
+   <p>Skye ama volar y ademas pose un helicoptero, por lo que sus deberes se enfocan en sobrevolar el aire,
+     además</p><p>su vehículo tiene un gancho que le permite agarrar cosas.</p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-marshall {
+        position: absolute;
+        top: 1650px;
+        left: 350px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-marshall">
+   <p>Marshall desempeña el papel de bombero, así como de cachorro médico, por lo que sus deberes se enfocan en sanar heridos,
+        apagar incendios, rescatar a personas de sitios elevados </p>
+</div>
+</body>
+
+{%endblock%}

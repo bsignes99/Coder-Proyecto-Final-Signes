@@ -1,0 +1,122 @@
+{%extends "padre.html" %}
+
+{%block titulo%} Conocé las herramientas principales que ayudan a nuestros heroes {%endblock%}
+{%block parrafo%} 
+<p> <mark>¿Quieres crear tu propio vehiculo?</mark></p>
+{%endblock%}
+
+{%block botones%} 
+<a class="btn btn-primary" href="formvehiculo">Personaliza el tuyo!</a>
+
+{%endblock%}
+
+{%block imagenes%} 
+<p><img src="https://i.pinimg.com/564x/2f/90/cd/2f90cd7eedb2d338ba56a246abd2309d.jpg" 
+alt="Patrulla", width="200" class="imagen-chaseV"> </p>
+
+
+<p><img src="https://i.pinimg.com/564x/0b/b5/cd/0bb5cd71f523c14346bc9267380de0b4.jpg" 
+alt="Helicoptero" width="250" class="imagen-skyeV" ></p>
+
+<p><img src="https://i.pinimg.com/564x/c2/07/06/c20706f4ced07fb82cb859c0b191d124.jpg"
+alt="Camion de bomberos", width="250" class="imagen-marshallV"></p>
+
+{%endblock%}
+
+
+{%block posicion%} 
+<style>
+    .imagen-chaseV {
+        position: absolute;
+        top: 1100px;
+        left: 100px;
+    }
+</style>
+
+<style>
+    .imagen-skyeV {
+        position: absolute;
+        top: 1250px;
+        right: 100px;
+    }
+</style>
+
+<style>
+    .imagen-marshallV {
+        position: absolute;
+        top: 1500px;
+        left: 100px;
+    }
+</style>
+
+{%endblock%}
+
+{%block siguiente%}
+<style>
+    /* Estilo CSS para posicionar el botón */
+    .boton-al-final {
+        position: absolute;
+        top: 1850px;
+        left: 675px;
+        background-color: #1900ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<a class="boton-al-final" href="vehiculossig"> Siguiente </a>
+{%endblock%}
+
+
+
+{%block texto%}
+
+    <style>
+        .posicion-especifica-chaseV {
+            position: absolute;
+            top: 1150px;
+            left: 300px;
+        }
+    </style>
+
+<body>
+    <div class="posicion-especifica-chaseV">
+       <p>Chase tiene un camión de policía azul. Cada vez que ladra de cierta manera,
+         el frente se desliza hacia arriba para revelar un cabrestante con forma de hueso.  </p>
+    </div>
+</body>
+
+<style>
+    .posicion-especifica-skyeV {
+        position: absolute;
+        top: 1400px;
+        left: 50px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-skyeV">
+   <p>Skye tiene un helicóptero rosa. Hay un arnés en la espalda. El helicóptero de Skye contiene 
+    un cable que puede usarse para</p><p> recoger objetos fuera de su alcance. </p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-marshallV {
+        position: absolute;
+        top: 1650px;
+        left: 350px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-marshallV">
+   <p>Marshall tiene un camión de bomberos rojo. Hay una escalera en la parte de atrás. Marshall puede hacer subir la escalera ladrando de cierta manera;
+     También puede hacer que la manguera del camión arroje agua ladrando </p>
+</div>
+</body>
+
+{%endblock%}

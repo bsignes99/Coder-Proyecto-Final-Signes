@@ -1,0 +1,23 @@
+{%extends "padre.html" %}
+{%block titulo%}Tus heroes favoritos {%endblock%}
+
+
+{%block parrafo%}
+
+{%for x in favoritos%}
+<p>Nombre:  {{x.nombre}}</p>
+<p>Habilidad: {{x.habilidad}}</p>
+<p>Raza: {{x.raza}} </p>
+<p>Descripcion: {{x.descripcion}}</p>
+
+<button>
+    <a href= "{%url 'editarheroe' x.nombre%}"> Modificar heroe</a> 
+</button>
+
+<button>
+    <a href= "{%url 'eliminarheroe' x.nombre%}"> Eliminar heroe</a> 
+</button>
+{%endfor%}
+
+{%endblock%}
+

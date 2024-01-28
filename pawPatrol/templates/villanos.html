@@ -1,0 +1,79 @@
+{%extends "padre.html" %}
+
+{%block titulo%} Ellos se encargan de sembrar el caos en Bahia Aventura {%endblock%}
+{%block parrafo%} 
+<p> <mark>¿Quieres crear tu propio villano?</mark></p>
+{%endblock%}
+
+{%block botones%} 
+<a class="btn btn-primary" href="formvillano">Personaliza el tuyo!</a>
+
+{%endblock%}
+
+{%block imagenes%} 
+<p><img src="https://static.wikia.nocookie.net/pawpatrol/images/5/58/Mayorhumdinger.png/revision/latest?cb=20210529014939&path-prefix=es" 
+alt="Alcalde Humdinger", width="180" class="imagen-alcalde"> </p>
+
+
+<p><img src="https://static.wikia.nocookie.net/paw-patrol/images/c/c1/KittenCatastropheCrew.png/revision/latest?cb=20230429165114" 
+alt="Gatitos Desastrosos" width="250" class="imagen-gatitos" ></p>
+
+{%endblock%}
+
+
+{%block posicion%} 
+<style>
+    .imagen-alcalde {
+        position: absolute;
+        top: 1000px;
+        left: 100px;
+    }
+</style>
+
+<style>
+    .imagen-gatitos {
+        position: absolute;
+        top: 1500px;
+        right: 100px;
+    }
+</style>
+{%endblock%}
+
+
+
+{%block texto%}
+
+    <style>
+        .posicion-especifica-alcalde {
+            position: absolute;
+            top: 1150px;
+            left: 300px;
+        }
+    </style>
+
+<body>
+    <div class="posicion-especifica-alcalde">
+       <p>Es el villano principal de la serie, alcalde de la ciudad vecina Fondo Nuboso. Es el líder de los Gatitos Desastrosos; quienes buscan deshacerse de los Paw Patrol
+         de todas las maneras posibles, pero estos son siempre derrotados por los Paw Patrol.
+         El alcalde Humdinger es muy egoísta, ambicioso, envidioso y no le importa dañar la dignidad o sentimientos de una persona con tal de lograr sus maléficos planes. </p>
+    </div>
+</body>
+
+<style>
+    .posicion-especifica-gatitos {
+        position: absolute;
+        top: 1600px;
+        left: 50px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-gatitos">
+   <p>Son un grupo de seis gatitos entrenados por el alcalde Humdinger para lograr los malvados planes de este. Estos gatitos se</p>
+   <p> visten como los Paw Patrol e intentan frustrar
+     sus rescates mediante trampas o distracciones.</p>
+     <p>Los Gatitos Desastrosos no son siempre leales al alcalde Humdinger, también cometen planes malvados en su ausencia.</p>
+</div>
+</body>
+
+{%endblock%}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto al Lado de una Imagen</title>
+    <style>
+        /* Estilo opcional para alinear la imagen y el texto */
+        .contenedor-imagen {
+            display: flex;
+            align-items: center;
+        }
+
+        .contenedor-imagen img {
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor que incluye una imagen y un párrafo de texto -->
+<div class="contenedor-imagen">
+    <p><img src="https://www.pngall.com/wp-content/uploads/13/Paw-Patrol-Transparent.png" 
+    alt="Chase", width="180" class="imagen-chase"> </p>
+    <p>Texto al lado de la imagen. Puedes agregar más texto aquí.</p>
+</div>
+
+</body>
+</html>7
+
+
+
+
+
+{%block texto%}
+
+    <style>
+        .posicion-especifica-zuma {
+            position: absolute;
+            top: 1150px;
+            left: 300px;
+        }
+    </style>
+
+<body>
+    <div class="posicion-especifica-zuma">
+       <p>Chase es un perrito policía, espía, por lo que sus deberes se enfocan en proteger a los ciudadanos,
+         controlar el tránsito y buscar objetos perdidos. </p>
+    </div>
+</body>
+
+<style>
+    .posicion-especifica-rocky {
+        position: absolute;
+        top: 1400px;
+        left: 50px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rocky">
+   <p>Skye ama volar y ademas pose un helicoptero, por lo que sus deberes se enfocan en sobrevolar el aire,
+     además</p><p>su vehículo tiene un gancho que le permite agarrar cosas.</p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-rubble {
+        position: absolute;
+        top: 1650px;
+        left: 350px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rubble">
+   <p>Marshall desempeña el papel de bombero, así como de cachorro médico, por lo que sus deberes se enfocan en sanar heridos,
+        apagar incendios, rescatar a personas de sitios elevados </p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-rayder {
+        position: absolute;
+        top: 1650px;
+        left: 350px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rayder">
+   <p>Marshall desempeña el papel de bombero, así como de cachorro médico, por lo que sus deberes se enfocan en sanar heridos,
+        apagar incendios, rescatar a personas de sitios elevados </p>
+</div>
+</body>
+{%endblock%}
+
+
+{%block siguiente%}
+<style>
+    /* Estilo CSS para posicionar el botón */
+    .boton-al-final {
+        position: absolute;
+        top: 1850px;
+        left: 675px;
+        background-color: #1900ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<a class="boton-al-final" href="heroessig"> Descubre mas!!! </a>
+{%endblock%}
+
+https://www.pngall.com/wp-content/uploads/13/Paw-Patrol.png ray
+
+
+https://i.pinimg.com/564x/5e/1a/1a/5e1a1a3ae4bd3fd6ae2dc498c19f5b1c.jpg rock
+
+https://static.wikia.nocookie.net/paw-patrol/images/5/59/Zuma_PNG.png/revision/latest?cb=20190121213838&path-prefix=es zuma
+
+
+{%block texto%}
+
+    <style>
+        .posicion-especifica-zumaV {
+            position: absolute;
+            top: 1150px;
+            left: 300px;
+        }
+    </style>
+
+<body>
+    <div class="posicion-especifica-zumaV">
+       <p> Zuma tiene un aerodeslizador naranja. Zuma puede disparar 
+        anillos salvavidas desde el aerodeslizador. También puede transformarse en submarino </p>
+    </div>
+</body>
+
+<style>
+    .posicion-especifica-rockyV {
+        position: absolute;
+        top: 1400px;
+        left: 50px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rockyV">
+   <p>Rocky tiene un camión de reciclaje ecológico. Allí almacena piezas viejas que
+     pueden usarse más adelante. También puede transformarse en remolcador.</p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-rubbleV {
+        position: absolute;
+        top: 1650px;
+        left: 350px;
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rubbleV">
+    <p>Rubble tiene una topadora amarilla. En la parte trasera hay un brazo perforador y 
+        también una pala para excavadora </p>
+</div>
+</body>
+
+<style>
+    .posicion-especifica-rayderV {
+        position: absolute;
+        top: 1900px;
+        left: 25px;
+        
+    }
+</style>
+
+<body>
+<div class="posicion-especifica-rayderV">
+   <p>Ryder tiene un vehículo todo terreno rojo que se transforma en una moto de agua y una moto de nieve.
+     La transformación del vehículo está controlada por su Pup-Pad. Si presiona un botón, 
+     puede desplegar un chaleco salvavidas antes de navegar hacia la bahía. </p>
+</div>
+</body>
+
+{%endblock%}
+
+
+
+<form action="/heroes/" method="POST" name="formPersonaliza"> {%csrf_token%}
+    <p>Nombre <input type="text" name="nombre"> </p>
+       
+       </label for="habilidad"> Elige su habilidad </label>
+       <select name="habilidad">
+           <option>Astronauta</option>
+           <option>Programador</option>
+           <option>Cocinero</option>
+           <option>Bibliotecario</option>
+           <option>Doctor</option>
+       </select>
+   
+       <p></label for="raza"> Elige su raza </label>
+           <select name="raza">
+            <option>Mestizo</option>
+            <option>Beagle</option>
+            <option>West Highland Terrier</option>
+            <option>Labrador</option>
+           </select>
+       </p>
+   
+    <p>Vehiculo <input type="text" name="vehiculo"> </p>
+   
+       <input type= "submit" , value="Enviar">
+   
+   
+   </form>
+  
+   
+
+
+   def personalizarHeroe(request):
+    
+    if request.method == "POST":
+        if request.method=="POST":
+            numero = (random.randint(10, 10000))
+            nuevoHeroe = heroe (id = numero ,nombre = request.POST["nombre"],
+                            habilidad = request.POST["habilidad"], raza = request.POST["raza"],
+                             vehiculo = request.POST["vehiculo"])
+            nuevoHeroe.save()
+            return render(request, "tupersonaje.html")
+    else:
+        nuevo_form = formularioHeroes()
+
+    return render(request, "formheroe.html")

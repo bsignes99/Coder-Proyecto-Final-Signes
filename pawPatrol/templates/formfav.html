@@ -1,0 +1,14 @@
+{%extends "padre.html" %}
+{%block titulo%} Sube tu heroe {%endblock%}
+
+
+{%block formulario%}
+
+<form action="" method="POST" > {%csrf_token%}
+    
+    {{nuevofav.as_p}}
+
+    <input type= "submit" , value="Enviar">
+</form>
+
+{%endblock%}

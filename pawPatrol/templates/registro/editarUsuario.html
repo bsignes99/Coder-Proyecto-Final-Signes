@@ -1,0 +1,15 @@
+{%extends "padre.html" %}
+{%block titulo%} Editar perfil {%endblock%}
+
+{%block formulario%}
+<form action="" method="POST"> {%csrf_token%}
+    
+    {{form}}
+
+    <input type="submit", value="Guardar">
+</form>
+
+<a class="btn btn-primary" href="{%url 'editaravatar'%}">Editar avatar</a> 
+
+
+{%endblock%}

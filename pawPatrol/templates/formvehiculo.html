@@ -1,0 +1,14 @@
+{%extends "padre.html" %}
+{%block titulo%} Personaliza tu Vehiculo {%endblock%}
+
+
+{%block formulario%}
+
+<form action="" method="POST"> {%csrf_token%}
+    
+    {{nuevovehiculo.as_p}}
+
+    <input type= "submit" , value="Enviar">
+</form>
+
+{%endblock%}
