@@ -2,7 +2,7 @@
 {%block titulo%} Editar avatar {%endblock%}
 
 {%block formulario%}
-<form action="" method="POST"> {%csrf_token%}
+<form action="" method="POST", enctype="multipart/form-data"> {%csrf_token%}
     {{formu.as_p}}
     <input type="submit", value="Guardar">
 </form>
