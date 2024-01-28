@@ -252,7 +252,7 @@ def editar_avatar(request):
     else:
         formu = editarAvatar()
 
-    return render(request, "registro/editarAvatar.html", {"formulario": formu})
+    return render(request, "registro/editarAvatar.html", {"formu": formu})
 
 def sobremi(request):
 
