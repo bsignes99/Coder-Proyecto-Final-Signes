@@ -24,10 +24,6 @@ class formularioFavorito(forms.Form):
     habilidad = forms.CharField(max_length=70)
     raza = forms.CharField(max_length=40)
     descripcion = forms.CharField(max_length=300)
-    foto = forms.ImageField()
-    class Meta():
-        model = favorito
-        fields = ["foto"]
             
 
 class registro(UserCreationForm):
